@@ -9,14 +9,22 @@ def cipher(message, key, encrypt):
     #go through every line in cipher
     if( encrypt == True):
         for c in message:
-            print(ord(c) - ord('A'))
-            print((ord(key[i % key_length]) - ord('A')))
             c = (ord(c)- ord('A'))+ (ord(key[i % key_length]) - ord('A')) + 1
-            print(c)
             c = (c % 26) + ord('A')
-            print(chr(c))
             result += chr(c)
             i = i + 1
+        return result
+    if (encrypt == False):
+        for c in message:
+            print(ord(c)- ord('A'))
+            print((ord(key[i % key_length]) - ord('A')))
+
+            c =  c = (ord(c)- ord('A') )- ((ord(key[i % key_length]) - ord('A'))) - 1
+            print(c)
+            c = (c % 26) + ord('A')
+            result += chr(c)
+            i = i + 1
+        return result
 
 
 
@@ -39,7 +47,7 @@ for line in sys.stdin:
         if passkey is None:
             print("ERROR No passkey set")
         #else:
-        #print("RESULT", vigenere_cipher(argument, passkey, encrypt=False))
+        print("RESULT", cipher(argument, passkey, encrypt=False))
     elif command == "QUIT":
         break
     else:

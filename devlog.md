@@ -32,3 +32,13 @@ Currently working on the encryption program. I understand how it works and plan 
 realized one of the errors is because my program calculate the value of A as 0 so it doesn't add enough letters for the final value
 
 ---
+### 2025-03-10 18:06 - [DECRYPT]
+
+starting work on the decrytion part of the algorithm. It should be fairly straight forward as I could just subtract the values instead of adding
+
+---
+### 2025-03-10 18:24 - [DECRYPTCOMPLETE]
+
+completed the decryption part of the program
+
+---
