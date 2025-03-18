@@ -42,3 +42,18 @@ starting work on the decrytion part of the algorithm. It should be fairly straig
 completed the decryption part of the program
 
 ---
+### 2025-03-18 13:38 - [DRIVER]
+
+I need to start working on the driver program that will connect my logger and encryption program. I know I need to use pipes in order to connect the output of the two processes (logger and encryption program). I'm not entirely sure how to only log changes for only a specific run so I'll need to look into that. 
+
+---
+### 2025-03-18 13:38 - [EXIT]
+
+
+
+---
+### 2025-03-18 13:38 - []
+
+
+
+---
