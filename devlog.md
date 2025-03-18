@@ -57,3 +57,173 @@ I need to start working on the driver program that will connect my logger and en
 
 
 ---
+### 2025-03-18 13:51 - [HISTORY]
+
+I'm currently thinking of using an array to store the histroy. This could also store previous passwords and since it's an array, I can delete the history once the program is over
+
+---
+### 2025-03-18 14:01 - [PROGRESS]
+
+finished implementing the inital driver but now I get to run it and see where all of my errors stem from!
+
+---
+### 2025-03-18 14:22 - [COMMAND:]
+
+Set new password
+
+---
+### 2025-03-18 14:24 - [ERROR]
+
+once I submit a command to encryption, it closes the pipe so it's not able to accept more commands
+
+---
+### 2025-03-18 14:24 - [QUIT]
+
+
+
+---
+### 2025-03-18 14:24 - []
+
+
+
+---
+### 2025-03-18 14:41 - [DRIVERISSUE]
+
+the reason it was closing the pipe was because of the way my encrpytion program was set up. I changed it so that it continues to run until it recieves the QUIT message 
+
+---
+### 2025-03-18 14:42 - [COMMAND:]
+
+Set new password
+
+---
+### 2025-03-18 14:43 - [COMMAND:]
+
+Set new password
+
+---
+### 2025-03-18 14:57 - [COMMAND:]
+
+Set new password
+
+---
+### 2025-03-18 14:58 - [COMMAND:]
+
+Set new password
+
+---
+### 2025-03-18 14:58 - [COMMAND:]
+
+Use password from history
+
+---
+### 2025-03-18 15:00 - [COMMAND:]
+
+Set new password
+
+---
+### 2025-03-18 15:02 - [COMMAND:]
+
+Encrypt new string
+
+---
+### 2025-03-18 15:04 - [COMMAND:]
+
+Encrypt new string
+
+---
+### 2025-03-18 15:04 - [COMMAND:]
+
+Set new password
+
+---
+### 2025-03-18 15:04 - [COMMAND:]
+
+Encrypt new string
+
+---
+### 2025-03-18 15:05 - [COMMAND:]
+
+Set new password
+
+---
+### 2025-03-18 15:05 - [COMMAND:]
+
+Encrypt new string
+
+---
+### 2025-03-18 15:06 - [COMMAND:]
+
+Set new password
+
+---
+### 2025-03-18 15:06 - [COMMAND:]
+
+Encrypt new string
+
+---
+### 2025-03-18 15:08 - [COMMAND:]
+
+Set new password
+
+---
+### 2025-03-18 15:08 - [COMMAND:]
+
+Encrypt new string
+
+---
+### 2025-03-18 15:21 - [COMMAND:]
+
+Set new password
+
+---
+### 2025-03-18 15:21 - [COMMAND:]
+
+Encrypt new string
+
+---
+### 2025-03-18 15:22 - [COMMAND:]
+
+Set new password
+
+---
+### 2025-03-18 15:23 - [COMMAND:]
+
+Encrypt new string
+
+---
+### 2025-03-18 15:26 - [RESULT]
+
+Passkey setCOMMAND: Encrypt new string
+
+---
+### 2025-03-18 15:35 - [RESULT]
+
+AARYAARESULT Passkey setCOMMAND: Decrypt new string
+
+---
+### 2025-03-18 16:59 - [RESULT]
+
+Passkey setRESULT BBSZBB1101QUIT
+
+---
+### 2025-03-18 17:06 - [RESULT]
+
+Passkey set1QUIT
+
+---
+### 2025-03-18 17:10 - [RESULT]
+
+Passkey setRESULT AARYAAQUIT
+
+---
+### 2025-03-18 17:22 - [PROGRESS]
+
+
+
+---
+### 2025-03-18 17:26 - [PROGRESS]
+
+the basic part of driver.py is completed but I need to better format the log file, add in error checking that ensures the user is only inputting allowed characters, add in a way to exit to enter a new string not in history 
+
+---
