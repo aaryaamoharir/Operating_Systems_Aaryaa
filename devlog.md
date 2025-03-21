@@ -262,3 +262,358 @@ program exit
 The issue with why the logger was not writing out individual commands per line was because I wasn't ending each logger message in a newline. I need to work on allowing a user to go back if they click on using commands from history and then decide to enter in a newline instead
 
 ---
+### 2025-03-21 14:50 - [START]
+
+Driver program started
+
+---
+### 2025-03-21 14:50 - [Command:]
+
+PASSWORD
+
+---
+### 2025-03-21 14:50 - [Command:]
+
+1
+
+---
+### 2025-03-21 14:50 - [Command:]
+
+PASS!
+
+---
+### 2025-03-21 14:50 - [Command:]
+
+PASSWORD
+
+---
+### 2025-03-21 14:50 - [Choice:]
+
+Use a new password
+
+---
+### 2025-03-21 14:50 - [Command:]
+
+PASSWORD
+
+---
+### 2025-03-21 14:50 - [Choice:]
+
+Use a password from history
+
+---
+### 2025-03-21 14:51 - [START]
+
+Driver program started
+
+---
+### 2025-03-21 14:51 - [Command:]
+
+PASSWOED
+
+---
+### 2025-03-21 14:51 - [Command:]
+
+PASSWORD
+
+---
+### 2025-03-21 14:52 - [Choice:]
+
+Use a password from history
+
+---
+### 2025-03-21 14:53 - [START]
+
+Driver program started
+
+---
+### 2025-03-21 14:53 - [Command:]
+
+PASSWORD
+
+---
+### 2025-03-21 14:53 - [Choice:]
+
+Use a password from history
+
+---
+### 2025-03-21 14:59 - [START]
+
+Driver program started
+
+---
+### 2025-03-21 14:59 - [Command:]
+
+PASSWORD
+
+---
+### 2025-03-21 14:59 - [Choice:]
+
+Use a password from history
+
+---
+### 2025-03-21 15:00 - [START]
+
+Driver program started
+
+---
+### 2025-03-21 15:00 - [Command:]
+
+PASSWORD
+
+---
+### 2025-03-21 15:00 - [Choice:]
+
+Use a password from history
+
+---
+### 2025-03-21 15:00 - [START]
+
+Driver program started
+
+---
+### 2025-03-21 15:00 - [Command:]
+
+PASSWORD
+
+---
+### 2025-03-21 15:00 - [Choice:]
+
+Use a password from history
+
+---
+### 2025-03-21 15:01 - [START]
+
+Driver program started
+
+---
+### 2025-03-21 15:01 - [Command:]
+
+PASSWORD
+
+---
+### 2025-03-21 15:01 - [Choice:]
+
+Use a password from history
+
+---
+### 2025-03-21 15:01 - [START]
+
+Driver program started
+
+---
+### 2025-03-21 15:01 - [Command:]
+
+PASSWORD
+
+---
+### 2025-03-21 15:02 - [Choice:]
+
+Use a password from history
+
+---
+### 2025-03-21 15:06 - [START]
+
+Driver program started
+
+---
+### 2025-03-21 15:06 - [Command:]
+
+PASSWORD
+
+---
+### 2025-03-21 15:06 - [Choice:]
+
+Use a password from history
+
+---
+### 2025-03-21 15:07 - [START]
+
+Driver program started
+
+---
+### 2025-03-21 15:07 - [Command:]
+
+PASSWORD
+
+---
+### 2025-03-21 15:07 - [Choice:]
+
+Use a password from history
+
+---
+### 2025-03-21 15:08 - [Command:]
+
+EXIT
+
+---
+### 2025-03-21 15:08 - [START]
+
+Driver program started
+
+---
+### 2025-03-21 15:08 - [Command:]
+
+
+
+---
+### 2025-03-21 15:08 - [Command:]
+
+PASSWORD
+
+---
+### 2025-03-21 15:08 - [Choice:]
+
+Use a password from history
+
+---
+### 2025-03-21 15:09 - [START]
+
+Driver program started
+
+---
+### 2025-03-21 15:09 - [Command:]
+
+PASSWORD
+
+---
+### 2025-03-21 15:09 - [Choice:]
+
+Use a password from history
+
+---
+### 2025-03-21 15:09 - [Choice:]
+
+Use a new password
+
+---
+### 2025-03-21 15:09 - [RESULT]
+
+Passkey set
+
+---
+### 2025-03-21 15:19 - [START]
+
+Driver program started
+
+---
+### 2025-03-21 15:19 - [Command:]
+
+ENCRYPT
+
+---
+### 2025-03-21 15:19 - [Choice:]
+
+Use a new string
+
+---
+### 2025-03-21 15:19 - [ERROR]
+
+No passkey set
+
+---
+### 2025-03-21 15:19 - [Command:]
+
+PASSWORD
+
+---
+### 2025-03-21 15:19 - [Choice:]
+
+Use a password from history
+
+---
+### 2025-03-21 15:19 - [Choice:]
+
+Use a new password
+
+---
+### 2025-03-21 15:19 - [RESULT]
+
+Passkey set
+
+---
+### 2025-03-21 15:19 - [Command:]
+
+ENCRYPT
+
+---
+### 2025-03-21 15:19 - [Choice:]
+
+Use a string from history
+
+---
+### 2025-03-21 15:20 - [Choice:]
+
+Use a new string
+
+---
+### 2025-03-21 15:20 - [RESULT]
+
+CCCC
+
+---
+### 2025-03-21 15:20 - [Command:]
+
+DECRYPT
+
+---
+### 2025-03-21 15:20 - [RESULT]
+
+BBBB
+
+---
+### 2025-03-21 15:20 - [Command:]
+
+HISTORY
+
+---
+### 2025-03-21 15:25 - [Command:]
+
+QUIT
+
+---
+### 2025-03-21 15:25 - [END]
+
+Driver program exit
+
+---
+### 2025-03-21 15:25 - [START]
+
+Driver program started
+
+---
+### 2025-03-21 15:25 - [Command:]
+
+ENCRYPT
+
+---
+### 2025-03-21 15:25 - [Choice:]
+
+Use a new string
+
+---
+### 2025-03-21 15:25 - [ERROR]
+
+No passkey set
+
+---
+### 2025-03-21 15:25 - [Command:]
+
+DECRYPT
+
+---
+### 2025-03-21 15:25 - [ERROR]
+
+No passkey set
+
+---
+### 2025-03-21 15:25 - [Command:]
+
+DECRYPT
+
+---
+### 2025-03-21 15:28 - [CHANGES]
+
+added logic to return to a place to enter a new string if they already entered history 
+
+---
