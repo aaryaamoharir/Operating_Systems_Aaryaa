@@ -227,3 +227,38 @@ Passkey setRESULT AARYAAQUIT
 the basic part of driver.py is completed but I need to better format the log file, add in error checking that ensures the user is only inputting allowed characters, add in a way to exit to enter a new string not in history 
 
 ---
+### 2025-03-18 17:55 - [Driver]
+
+program startedERROR No passkey setRESULT Passkey setRESULT AARYAARESULT AARYAADriver program exitQUIT
+
+---
+### 2025-03-21 14:29 - [Driver]
+
+program started
+
+---
+### 2025-03-21 14:29 - [RESULT]
+
+Passkey set
+
+---
+### 2025-03-21 14:29 - [RESULT]
+
+BBSZBB
+
+---
+### 2025-03-21 14:29 - [RESULT]
+
+AARYAA
+
+---
+### 2025-03-21 14:30 - [Driver]
+
+program exit
+
+---
+### 2025-03-21 14:31 - [PROGRESS]
+
+The issue with why the logger was not writing out individual commands per line was because I wasn't ending each logger message in a newline. I need to work on allowing a user to go back if they click on using commands from history and then decide to enter in a newline instead
+
+---
