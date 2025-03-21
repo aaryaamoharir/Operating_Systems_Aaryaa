@@ -617,3 +617,93 @@ DECRYPT
 added logic to return to a place to enter a new string if they already entered history 
 
 ---
+### 2025-03-21 15:29 - [START]
+
+Driver program started
+
+---
+### 2025-03-21 15:29 - [Command:]
+
+ENCRYPT
+
+---
+### 2025-03-21 15:29 - [Choice:]
+
+Use a string from history
+
+---
+### 2025-03-21 15:29 - [Choice:]
+
+Use a new string
+
+---
+### 2025-03-21 15:29 - [ERROR]
+
+No passkey set
+
+---
+### 2025-03-21 15:29 - [Command:]
+
+ENCRYPT
+
+---
+### 2025-03-21 15:29 - [Choice:]
+
+Use a string from history
+
+---
+### 2025-03-21 15:29 - [ERROR]
+
+No passkey set
+
+---
+### 2025-03-21 15:29 - [Command:]
+
+DECRYPT
+
+---
+### 2025-03-21 15:29 - [ERROR]
+
+No passkey set
+
+---
+### 2025-03-21 15:29 - [Command:]
+
+QUIT
+
+---
+### 2025-03-21 15:29 - [END]
+
+Driver program exit
+
+---
+### 2025-03-21 15:43 - [START]
+
+Driver program started
+
+---
+### 2025-03-21 15:44 - [Command:]
+
+PASSWORD
+
+---
+### 2025-03-21 15:44 - [Choice:]
+
+Use a new password
+
+---
+### 2025-03-21 15:44 - [RESULT]
+
+Passkey set
+
+---
+### 2025-03-21 15:44 - [Command:]
+
+QUIT
+
+---
+### 2025-03-21 15:44 - [END]
+
+Driver program exit
+
+---

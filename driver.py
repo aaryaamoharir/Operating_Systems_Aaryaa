@@ -2,6 +2,7 @@ import subprocess
 from subprocess import Popen, PIPE
 import os
 import re
+import sys
 
 def print_menu():
     print("\nMenu:")
@@ -53,8 +54,6 @@ def main(log_file):
             logger.stdin.flush()
             logger.stdin.write("QUIT\n")  # quits the logger
             encryption.stdin.write("QUIT")  # quits the encryption program
-            encryption.stdin.flush()
-            logger.stdin.flush()
             break
 
         elif command == 'PASSWORD':
@@ -218,5 +217,9 @@ def main(log_file):
             print("Invalid command.")
 
 if __name__ == '__main__':
-            log_file = input("Enter the log file name: ").strip()
-            main(log_file)
+    if len(sys.argv) != 2:
+        print("Usage: python3 driver.py <log_file>")
+        sys.exit(1)
+
+    log_file = sys.argv[1]
+    main(log_file)
