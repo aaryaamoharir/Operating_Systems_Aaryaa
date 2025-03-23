@@ -730,3 +730,49 @@ realized that I don't necessarily like how the logger is formatted currently so 
 ### 2025-03-23 16:58 - [FORMATTING] made some changes to how the logger was logging for password setting. It makes the logger easier to read and I'll do that for all of the other options as well just so it's easier to understand. I'm a bit worried that I'm logging too much but hopefully it's fine!
 ### 2025-03-23 16:58 - [QIUT] 
 ### 2025-03-23 16:58 - [STOP_LOGGER] Logger stopped
+### 2025-03-23 17:50 - [START_LOGGER] Logger started
+### 2025-03-23 17:50 - [START_DRIVER] Driver program started
+### 2025-03-23 17:50 - [START_ENCRYPTION] Encryption program started
+### 2025-03-23 17:51 - [USER_INPUT] PASSWOR
+### 2025-03-23 17:51 - [USER_INPUT] PASSWORD
+### 2025-03-23 17:51 - [ERROR]  Invalid Choice
+### 2025-03-23 17:52 - [USER_INPUT] PASSWORD
+### 2025-03-23 17:52 - [USER_INPUT] Use a new password
+### 2025-03-23 17:52 - [ERROR]  Invalid input! Password can only contain letters (A-Z, a-z)
+### 2025-03-23 17:53 - [USER_INPUT] PASSWORD
+### 2025-03-23 17:53 - [USER_INPUT] Use a new password
+### 2025-03-23 17:53 - [ERROR]  Invalid input! Password can only contain letters (A-Z, a-z)
+### 2025-03-23 17:53 - [USER_INPUT] 1
+### 2025-03-23 17:53 - [USER_INPUT] PASSWORD
+### 2025-03-23 17:53 - [USER_INPUT] Use a password from history
+### 2025-03-23 17:53 - [USER_INPUT] -3
+### 2025-03-23 17:53 - [ERROR]  Invalid Choice
+### 2025-03-23 17:53 - [USER_INPUT] PASSWORD
+### 2025-03-23 17:53 - [USER_INPUT] Use a password from history
+### 2025-03-23 17:53 - [USER_INPUT] 2
+### 2025-03-23 17:53 - [ERROR] Invalid input! Input can only contain numbers and must be one of the options shown above
+### 2025-03-23 17:53 - [ERROR]  Invalid Choice
+### 2025-03-23 17:53 - [USER_INPUT] PASSWORD
+### 2025-03-23 17:53 - [USER_INPUT] Use a password from history
+### 2025-03-23 17:53 - [USER_INPUT] 4
+### 2025-03-23 17:53 - [ERROR]  Invalid Choice
+### 2025-03-23 17:54 - [USER_INPUT] ENCRYPT
+### 2025-03-23 17:54 - [USER_INPUT] Use a new string to encrypt
+### 2025-03-23 17:54 - [ENCRYPT_MESSAGE] AAAA
+### 2025-03-23 17:54 - [USER_INPUT] DECRYPT
+### 2025-03-23 17:54 - [USER_INPUT] Use a string from history
+### 2025-03-23 17:54 - [USER_INPUT] 2
+### 2025-03-23 17:54 - [ERROR] Invalid input! Input can only contain numbers and must be one of the options shown above
+### 2025-03-23 17:55 - [USER_INPUT] PASSWORD
+### 2025-03-23 17:55 - [USER_INPUT] Use a new password
+### 2025-03-23 17:55 - [RESULT_PASSWORD] RESULT Passkey set
+### 2025-03-23 17:55 - [USER_INPUT] 2
+### 2025-03-23 17:55 - [USER_INPUT] ENCRYPT
+### 2025-03-23 17:55 - [USER_INPUT] Use a new string to encrypt
+### 2025-03-23 17:55 - [ENCRYPT_MESSAGE] AARYAA
+### 2025-03-23 17:55 - [ENCRYPT_RESULT] BBSZBB
+### 2025-03-23 17:55 - [USER_INPUT] HISTORY
+### 2025-03-23 17:58 - [USER_INPUT] QUIT
+### 2025-03-23 17:58 - [END_DRIVER] Driver program exit
+### 2025-03-23 17:58 - [END_ENCRYPTION] Encryption program exit
+### 2025-03-23 17:58 - [STOP_LOGGER] Logger stopped
