@@ -726,3 +726,7 @@ realized that I don't necessarily like how the logger is formatted currently so 
 ### 2025-03-23 16:16 - [Logger] started
 ### 2025-03-23 16:16 - [TRIAL] I wanted to add a message that highlights when the logger starts 
 ### 2025-03-23 16:16 - [Logger] stopped
+### 2025-03-23 16:57 - [START_LOGGER] Logger started
+### 2025-03-23 16:58 - [FORMATTING] made some changes to how the logger was logging for password setting. It makes the logger easier to read and I'll do that for all of the other options as well just so it's easier to understand. I'm a bit worried that I'm logging too much but hopefully it's fine!
+### 2025-03-23 16:58 - [QIUT] 
+### 2025-03-23 16:58 - [STOP_LOGGER] Logger stopped

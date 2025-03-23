@@ -39,6 +39,8 @@ def main(log_file):
 
     logger.stdin.write("START_DRIVER Driver program started\n")
     logger.stdin.flush()
+    logger.stdin.write("START_ENCRYPTION Encryption program started\n")
+    logger.stdin.flush()
 
     history = []
     password_history = []
@@ -46,11 +48,13 @@ def main(log_file):
     while True:
         print_menu()
         command = input("Enter command: ").strip().upper()
-        logger.stdin.write("COMMAND " + command + "\n")
+        logger.stdin.write("USER_INPUT " + command + "\n")
         logger.stdin.flush()
 
         if command == 'QUIT':
-            logger.stdin.write("END Driver program exit\n")
+            logger.stdin.write("END_DRIVER Driver program exit\n")
+            logger.stdin.flush()
+            logger.stdin.write("END_ENCRYPTION Encryption program exit\n")
             logger.stdin.flush()
             logger.stdin.write("QUIT\n")  # quits the logger
             encryption.stdin.write("QUIT")  # quits the encryption program
@@ -65,31 +69,40 @@ def main(log_file):
             #they want to set a new passkey
             if choice == '2':
                 print("Password history:")
-                logger.stdin.write("Choice: Use a password from history\n")
+                logger.stdin.write("USER_INPUT Use a password from history\n")
                 logger.stdin.flush()
                 for idx, password in enumerate(password_history):
                     print(f"{idx + 1}. {password}")
                 selected = int(input("Select password from history (please select letters only) or type -1 to enter a new string instead: ").strip())
                 if not is_valid_numbers(selected):
                     print("Invalid input! Input can only contain numbers.")
+                    logger.stdin.write("ERROR " + " Invalid input! Input can only contain numbers" + "\n")
+                    logger.stdin.flush()
                     continue
+                logger.stdin.write("USER_INPUT " + str(selected) + "\n")
                 if str(selected) == '-1':
                     choice = '1'
                 if str(selected) == '2':
                     selected_password = password_history[selected - 1]
-                    encryption.stdin.write(f"PASS {selected_password}\n")
-                    encryption.stdin.flush()
-                    encrypted_message = encryption.stdout.readline().rstrip()
-                    logger.stdin.write(encrypted_message + "\n")
-                    logger.stdin.flush()
-                    print("Passkey set from history.")
+                    if (not is_valid_numbers()) or (selected_password > len(password_history)):
+                        logger.stdin.write("ERROR" + " Invalid input! Input can only contain numbers and must be one of the options shown above" +   "\n")
+                        logger.stdin.flush()
+                    else:
+                        encryption.stdin.write(f"PASS {selected_password}\n")
+                        encryption.stdin.flush()
+                        encrypted_message = encryption.stdout.readline().rstrip()
+                        logger.stdin.write("RESULT_PASSWORD " + encrypted_message + "\n")
+                        logger.stdin.flush()
+                        print("Passkey set from history.")
             if choice == '1':
                 password = input("Enter password (letters only): ").strip().upper()
-                logger.stdin.write("Choice: Use a new password\n")
+                logger.stdin.write("USER_INPUT Use a new password\n")
                 logger.stdin.flush()
 
                 if not is_valid_input(password):
                     print("Invalid input! Password can only contain letters (A-Z, a-z).")
+                    logger.stdin.write("ERROR " + " Invalid input! Password can only contain letters (A-Z, a-z)" + "\n")
+                    logger.stdin.flush()
                     continue
                 #set the passkey
                 encryption.stdin.write(f"PASS {password}\n")
@@ -97,12 +110,16 @@ def main(log_file):
                     encryption.stdin.flush()
                 else:
                     print("Encryption process died unexpectedly.")
+                    logger.stdin.write("ERROR " + " Encryption process died unexpectedly." + "\n")
+                    logger.stdin.flush()
                 password_history.append(password)
                 encrypted_message = encryption.stdout.readline().rstrip()
-                logger.stdin.write(encrypted_message + "\n")
+                logger.stdin.write("RESULT_PASSWORD " + encrypted_message + "\n")
                 logger.stdin.flush()
                 print("Passkey set successfully.")
             else:
+                logger.stdin.write("ERROR " + " Invalid Choice" + "\n")
+                logger.stdin.flush()
                 print("Invalid choice.")
         elif command == 'ENCRYPT':
             # Encrypt command
