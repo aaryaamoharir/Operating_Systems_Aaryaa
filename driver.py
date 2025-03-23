@@ -37,7 +37,7 @@ def main(log_file):
         encoding='utf8'
     )
 
-    logger.stdin.write("START Driver program started\n")
+    logger.stdin.write("START_DRIVER Driver program started\n")
     logger.stdin.flush()
 
     history = []
@@ -46,7 +46,7 @@ def main(log_file):
     while True:
         print_menu()
         command = input("Enter command: ").strip().upper()
-        logger.stdin.write("Command: " + command + "\n")
+        logger.stdin.write("COMMAND " + command + "\n")
         logger.stdin.flush()
 
         if command == 'QUIT':

@@ -707,3 +707,22 @@ QUIT
 Driver program exit
 
 ---
+### 2025-03-23 15:15 - [PROGRESS]
+
+I need to fix some of the statements and clean up my code a bit
+
+---
+### 2025-03-23 16:12 - [I]
+
+realized that I don't necessarily like how the logger is formatted currently so I'll be changing that
+
+---
+### 2025-03-23 16:13 - [QIUT]
+
+
+
+---
+### 2025-03-23 16:14 - [TRIAL] does this logging format work better?
+### 2025-03-23 16:16 - [Logger] started
+### 2025-03-23 16:16 - [TRIAL] I wanted to add a message that highlights when the logger starts 
+### 2025-03-23 16:16 - [Logger] stopped

@@ -12,7 +12,7 @@ def log_message(log_file, message):
     msg = parts[1] if len(parts) > 1 else ""
 
     # correct formatting
-    log_entry = f"### {timestamp} - [{action}]\n\n{msg}\n\n---\n"
+    log_entry = f"### {timestamp} - [{action}] {msg}\n"
 
     # allows me to add information to the file multiple times
     with open(log_file, 'a') as file:
@@ -34,6 +34,7 @@ def main():
     except FileExistsError:
         pass
 
+    log_message(log_file, "START_LOGGER Logger started")
     print("Logger started. Type 'QUIT' to stop.")
 
     while True:
@@ -41,6 +42,7 @@ def main():
 
         #stops the program when someone tells it to QUIT
         if message == "QUIT":
+            log_message(log_file, "STOP_LOGGER Logger stopped")
             print("Logger stopped.")
             break
 
