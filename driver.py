@@ -198,8 +198,9 @@ def main(log_file):
                 logger.stdin.write("ENCRYPT_RESULT " + string + "\n")
                 logger.stdin.flush()
                 print("RESULT Encrypted message:" + string)
-            else:
-                print("ERROR Invalid choice.")
+            if( choice != 1 and choice != 2 or choice != -1):
+                print(choice)
+                print("ERROR Invalid choice for encrypt.")
                 logger.stdin.write("ERROR Invalid Choice" + "\n")
                 logger.stdin.flush()
         elif command == 'DECRYPT':

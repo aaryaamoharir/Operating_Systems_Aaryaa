@@ -677,3 +677,46 @@ Driver program exit
 ### 2025-03-24 15:57 - [START_LOGGER] Logger started
 ### 2025-03-24 15:57 - [START_DRIVER] Driver program started
 ### 2025-03-24 15:57 - [START_ENCRYPTION] Encryption program started
+### 2025-03-24 17:20 - [START_LOGGER] Logger started
+### 2025-03-24 17:20 - [START_DRIVER] Driver program started
+### 2025-03-24 17:20 - [START_ENCRYPTION] Encryption program started
+### 2025-03-24 17:20 - [USER_INPUT] PASSWORD
+### 2025-03-24 17:50 - [START_LOGGER] Logger started
+### 2025-03-24 17:50 - [START_DRIVER] Driver program started
+### 2025-03-24 17:50 - [START_ENCRYPTION] Encryption program started
+### 2025-03-24 17:50 - [USER_INPUT] PASSWORD
+### 2025-03-24 17:50 - [USER_INPUT] Use a new password
+### 2025-03-24 17:50 - [RESULT_PASSWORD] RESULT Passkey set
+### 2025-03-24 17:50 - [USER_INPUT] 2
+### 2025-03-24 17:50 - [ERROR]  Invalid choice
+### 2025-03-24 17:50 - [USER_INPUT] ENCRYPT
+### 2025-03-24 17:50 - [USER_INPUT] Use a string from history
+### 2025-03-24 17:50 - [USER_INPUT] 1
+### 2025-03-24 17:50 - [ENCRYPT_MESSAGE] HELLO
+### 2025-03-24 17:50 - [ERROR] Invalid Choice
+### 2025-03-24 17:50 - [START_LOGGER] Logger started
+### 2025-03-24 17:50 - [START_DRIVER] Driver program started
+### 2025-03-24 17:50 - [START_ENCRYPTION] Encryption program started
+### 2025-03-24 17:50 - [USER_INPUT] PASSWORD
+### 2025-03-24 17:50 - [USER_INPUT] Use a password from history
+### 2025-03-24 17:50 - [USER_INPUT] -1
+### 2025-03-24 17:50 - [USER_INPUT] Use a new password
+### 2025-03-24 17:50 - [RESULT_PASSWORD] RESULT Passkey set
+### 2025-03-24 17:50 - [USER_INPUT] ENCRYT
+### 2025-03-24 17:50 - [ERROR]  Invalid choice
+### 2025-03-24 17:50 - [USER_INPUT] ENCRYPT
+### 2025-03-24 17:50 - [USER_INPUT] Use a string from history
+### 2025-03-24 17:50 - [USER_INPUT] 1
+### 2025-03-24 17:50 - [ENCRYPT_MESSAGE] HELLO
+### 2025-03-24 17:50 - [ERROR] Invalid Choice
+### 2025-03-24 17:52 - [START_LOGGER] Logger started
+### 2025-03-24 17:52 - [START_DRIVER] Driver program started
+### 2025-03-24 17:52 - [START_ENCRYPTION] Encryption program started
+### 2025-03-24 17:52 - [USER_INPUT] PASSWORD
+### 2025-03-24 17:52 - [USER_INPUT] Use a new password
+### 2025-03-24 17:52 - [RESULT_PASSWORD] RESULT Passkey set
+### 2025-03-24 17:52 - [USER_INPUT] ENCRYPT
+### 2025-03-24 17:52 - [USER_INPUT] Use a string from history
+### 2025-03-24 17:52 - [USER_INPUT] 1
+### 2025-03-24 17:52 - [ENCRYPT_MESSAGE] HELLO
+### 2025-03-24 17:52 - [ERROR] Invalid Choice

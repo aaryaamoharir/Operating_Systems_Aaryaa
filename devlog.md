@@ -73,4 +73,5 @@ to not include the logger statements so I went ahead and fixed my devlog formatt
 
 ---
 2025-03-24 19:22  
-Ended the session today.
+Ended the session today. I tested it out on the CS1 server and it seems like it is working as expected! I need to make a 
+readme file which I'll work on later today. There was also a logic issue with my for statements so I fixed that as well!
