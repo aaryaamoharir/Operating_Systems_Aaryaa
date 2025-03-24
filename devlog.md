@@ -125,5 +125,5 @@ realized that I don't necessarily like how the logger is formatted currently so 
 ---
 
 ### 2025-03-23 19:18 - [START_LOGGER] Logger started
-### 2025-03-23 19:22 - [CHANGES] I realized I needed a seperate devlog file and a logger.py file 
+### 2025-03-23 19:22 - [CHANGES] I realized I needed a separate devlog file and a logger.py file 
 ### 2025-03-23 19:22 - [STOP_LOGGER] Logger stopped

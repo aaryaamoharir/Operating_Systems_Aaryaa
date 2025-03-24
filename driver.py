@@ -75,7 +75,7 @@ def main(log_file):
                     print(f"{idx + 1}. {password}")
                 selected = int(input("Select password from history (please select letters only) or type -1 to enter a new string instead: ").strip())
                 if not is_valid_numbers(selected):
-                    print("Invalid input! Input can only contain numbers.")
+                    print("ERROR Invalid input! Input can only contain numbers.")
                     logger.stdin.write("ERROR " + " Invalid input! Input can only contain numbers" + "\n")
                     logger.stdin.flush()
                     continue
@@ -84,6 +84,7 @@ def main(log_file):
                     choice = '1'
                 if str(selected) == '2':
                     if (not is_valid_numbers(selected)) or (selected > len(history)):
+                        print( "ERROR " + " Invalid input! Input can only contain numbers and must be one of the options shown above" + "\n")
                         logger.stdin.write("ERROR" + " Invalid input! Input can only contain numbers and must be one of the options shown above" +   "\n")
                         logger.stdin.flush()
                     else:
@@ -100,7 +101,7 @@ def main(log_file):
                 logger.stdin.flush()
 
                 if not is_valid_input(password):
-                    print("Invalid input! Password can only contain letters (A-Z, a-z).")
+                    print("ERROR Invalid input! Password can only contain letters (A-Z, a-z).")
                     logger.stdin.write("ERROR " + " Invalid input! Password can only contain letters (A-Z, a-z)" + "\n")
                     logger.stdin.flush()
                     continue
@@ -109,7 +110,7 @@ def main(log_file):
                 if encryption.poll() is None:
                     encryption.stdin.flush()
                 else:
-                    print("Encryption process died unexpectedly.")
+                    print("ERROR Encryption process died unexpectedly.")
                     logger.stdin.write("ERROR " + " Encryption process died unexpectedly." + "\n")
                     logger.stdin.flush()
                 history.append(password)
@@ -120,7 +121,7 @@ def main(log_file):
             else:
                 logger.stdin.write("ERROR " + " Invalid Choice" + "\n")
                 logger.stdin.flush()
-                print("Invalid choice.")
+                print("ERROR Invalid choice.")
         elif command == 'ENCRYPT':
             # Encrypt command
             print("Choose an option:")
@@ -128,7 +129,7 @@ def main(log_file):
             print("2. Use a string from history")
             choice = input("Enter choice (1 or 2): ").strip()
             if not is_valid_numbers(choice):
-                print("Invalid input! Input can only contain numbers.")
+                print("ERROR Invalid input! Input can only contain numbers.")
                 logger.stdin.write("ERROR " + " Invalid input! Input can only contain numbers" + "\n")
                 logger.stdin.flush()
                 continue
@@ -141,7 +142,7 @@ def main(log_file):
                     print(f"{idx + 1}. {item}")
                 selected = int(input("Select password from history (please select letters only) or type -1 to enter a new string instead: ").strip())
                 if not is_valid_numbers(selected):
-                    print("Invalid input! Input can only contain numbers.")
+                    print("ERROR Invalid input! Input can only contain numbers.")
                     logger.stdin.write("ERROR " + " Invalid input! Input can only contain numbers" + "\n")
                     logger.stdin.flush()
                     continue
@@ -151,6 +152,7 @@ def main(log_file):
                     choice = '1'
                 if choice == '2':
                     if (not is_valid_numbers(selected)) or (selected > len(history)):
+                        print( "ERROR" + " Invalid input! Input can only contain numbers and must be one of the options shown above" + "\n")
                         logger.stdin.write("ERROR" + " Invalid input! Input can only contain numbers and must be one of the options shown above" +   "\n")
                         logger.stdin.flush()
                         continue
@@ -169,14 +171,14 @@ def main(log_file):
                         #get the result of the encrypted string
                         string = encrypted_message.split("RESULT ", 1)[-1]
                         history.append(string)
-                        print(f"Encrypted message: {string}")
+                        print(f"RESULT Encrypted message: {string}")
             if choice == '1':
                 message = input("Enter string to encrypt: ").strip().upper()
                 logger.stdin.write("USER_INPUT Use a new string to encrypt\n")
                 logger.stdin.flush()
 
                 if not is_valid_input(message):
-                    print("Invalid input! Message can only contain letters (A-Z, a-z).")
+                    print("ERROR Invalid input! Message can only contain letters (A-Z, a-z).")
                     logger.stdin.write("ERROR " + "Invalid input! Message can only contain letters (A-Z, a-z)." + "\n")
                     logger.stdin.flush()
                     continue
@@ -195,9 +197,9 @@ def main(log_file):
                 history.append(string)
                 logger.stdin.write("ENCRYPT_RESULT " + string + "\n")
                 logger.stdin.flush()
-                print("Encrypted message:" + string)
+                print("RESULT Encrypted message:" + string)
             else:
-                print("Invalid choice.")
+                print("ERROR Invalid choice.")
                 logger.stdin.write("ERROR Invalid Choice" + "\n")
                 logger.stdin.flush()
         elif command == 'DECRYPT':
@@ -207,7 +209,7 @@ def main(log_file):
             print("2. Use a string from history")
             choice = input("Enter choice (1 or 2): ").strip()
             if not is_valid_numbers(choice):
-                print("Invalid input! Input can only contain numbers.")
+                print("ERROR Invalid input! Input can only contain numbers.")
                 logger.stdin.write("ERROR " + " Invalid input! Input can only contain numbers" + "\n")
                 logger.stdin.flush()
                 continue
@@ -220,7 +222,7 @@ def main(log_file):
                     print(f"{idx + 1}. {item}")
                 selected = int(input("Select password from history (please select letters only) or type -1 to enter a new string instead: ").strip())
                 if not is_valid_numbers(selected):
-                    print("Invalid input! Input can only contain numbers.")
+                    print("ERROR Invalid input! Input can only contain numbers.")
                     logger.stdin.write("ERROR " + " Invalid input! Input can only contain numbers" + "\n")
                     logger.stdin.flush()
                     continue
@@ -230,7 +232,7 @@ def main(log_file):
                     choice = '1'
             if choice == '2':
                 if (not is_valid_numbers(selected)) or (selected > len(history)):
-                    print("Invalid input! Input can only contain numbers and must be one of the options shown above")
+                    print("ERROR Invalid input! Input can only contain numbers and must be one of the options shown above")
                     logger.stdin.write("ERROR" + " Invalid input! Input can only contain numbers and must be one of the options shown above" + "\n")
                     logger.stdin.flush()
                     continue
@@ -251,12 +253,12 @@ def main(log_file):
                     logger.stdin.write("DECRYPT_RESULT " + string + "\n")
                     logger.stdin.flush()
                     history.append(string)
-                    print(f"Decrypted message: {decrypted_message}")
+                    print(f"RESULT Decrypted message: {decrypted_message}")
 
             if choice == '1':
                 message = input("Enter string to decrypt: ").strip()
                 if not is_valid_input(message):
-                    print("Invalid input! Message can only contain letters (A-Z, a-z).")
+                    print("ERROR Invalid input! Message can only contain letters (A-Z, a-z).")
                     logger.stdin.write("ERROR " + "Invalid input! Message can only contain letters (A-Z, a-z)." + "\n")
                     logger.stdin.flush()
                     continue
@@ -276,9 +278,9 @@ def main(log_file):
                 logger.stdin.write("DECRYPT_RESULT" + string + "\n")
                 logger.stdin.flush()
 
-                print(f"Decrypted message: {string}")
+                print(f"RESULT Decrypted message: {string}")
             else:
-                print("Invalid choice.")
+                print("ERROR Invalid choice.")
                 logger.stdin.write("ERROR " + " Invalid choice" + "\n")
                 logger.stdin.flush()
         elif command == 'HISTORY':
@@ -287,7 +289,7 @@ def main(log_file):
             for item in history:
                 print(item)
         else:
-            print("Invalid command.")
+            print("ERROR Invalid command.")
             logger.stdin.write("ERROR " + " Invalid choice" + "\n")
             logger.stdin.flush()
 
