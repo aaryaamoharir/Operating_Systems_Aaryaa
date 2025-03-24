@@ -43,7 +43,7 @@ def main(log_file):
     logger.stdin.flush()
 
     history = []
-    password_history = []
+    #password_history = []
 
     while True:
         print_menu()
@@ -71,7 +71,7 @@ def main(log_file):
                 print("Password history:")
                 logger.stdin.write("USER_INPUT Use a password from history\n")
                 logger.stdin.flush()
-                for idx, password in enumerate(password_history):
+                for idx, password in enumerate(history):
                     print(f"{idx + 1}. {password}")
                 selected = int(input("Select password from history (please select letters only) or type -1 to enter a new string instead: ").strip())
                 if not is_valid_numbers(selected):
@@ -83,11 +83,11 @@ def main(log_file):
                 if str(selected) == '-1':
                     choice = '1'
                 if str(selected) == '2':
-                    if (not is_valid_numbers(selected)) or (selected > len(password_history)):
+                    if (not is_valid_numbers(selected)) or (selected > len(history)):
                         logger.stdin.write("ERROR" + " Invalid input! Input can only contain numbers and must be one of the options shown above" +   "\n")
                         logger.stdin.flush()
                     else:
-                        selected_password = password_history[selected - 1]
+                        selected_password = history[selected - 1]
                         encryption.stdin.write(f"PASS {selected_password}\n")
                         encryption.stdin.flush()
                         encrypted_message = encryption.stdout.readline().rstrip()
@@ -112,7 +112,7 @@ def main(log_file):
                     print("Encryption process died unexpectedly.")
                     logger.stdin.write("ERROR " + " Encryption process died unexpectedly." + "\n")
                     logger.stdin.flush()
-                password_history.append(password)
+                history.append(password)
                 encrypted_message = encryption.stdout.readline().rstrip()
                 logger.stdin.write("RESULT_PASSWORD " + encrypted_message + "\n")
                 logger.stdin.flush()
