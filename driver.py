@@ -73,7 +73,11 @@ def main(log_file):
                 logger.stdin.flush()
                 for idx, password in enumerate(history):
                     print(f"{idx + 1}. {password}")
-                selected = int(input("Select password from history (please select letters only) or type -1 to enter a new string instead: ").strip())
+                if (len(history) <= 0):
+                    selected = int(input(
+                        "There are no values in history so type -1 to enter a new string instead: ").strip())
+                else:
+                    selected = int(input("Select password from history (please select numbers only) or type -1 to enter a new string instead: ").strip())
                 if not is_valid_numbers(selected):
                     print("ERROR Invalid input! Input can only contain numbers.")
                     logger.stdin.write("ERROR " + " Invalid input! Input can only contain numbers" + "\n")
@@ -96,7 +100,7 @@ def main(log_file):
                         logger.stdin.flush()
                         print("Passkey set from history.")
             if choice == '1':
-                password = input("Enter password (letters only): ").strip().upper()
+                password = input("Enter password (numbers only): ").strip().upper()
                 logger.stdin.write("USER_INPUT Use a new password\n")
                 logger.stdin.flush()
 
@@ -113,7 +117,6 @@ def main(log_file):
                     print("ERROR Encryption process died unexpectedly.")
                     logger.stdin.write("ERROR " + " Encryption process died unexpectedly." + "\n")
                     logger.stdin.flush()
-                history.append(password)
                 encrypted_message = encryption.stdout.readline().rstrip()
                 logger.stdin.write("RESULT_PASSWORD " + encrypted_message + "\n")
                 logger.stdin.flush()
@@ -140,7 +143,13 @@ def main(log_file):
                 logger.stdin.flush()
                 for idx, item in enumerate(history):
                     print(f"{idx + 1}. {item}")
-                selected = int(input("Select password from history (please select letters only) or type -1 to enter a new string instead: ").strip())
+                if (len(history) <= 0):
+                    selected = int(input(
+                        "There are no values in history so type -1 to enter a new string instead: ").strip())
+                else:
+                    selected = int(input(
+                        "Select password from history (please select numbers only) or type -1 to enter a new string instead: ").strip())
+
                 if not is_valid_numbers(selected):
                     print("ERROR Invalid input! Input can only contain numbers.")
                     logger.stdin.write("ERROR " + " Invalid input! Input can only contain numbers" + "\n")
@@ -223,7 +232,12 @@ def main(log_file):
                 print("History:")
                 for idx, item in enumerate(history):
                     print(f"{idx + 1}. {item}")
-                selected = int(input("Select password from history (please select letters only) or type -1 to enter a new string instead: ").strip())
+                if (len(history) <= 0):
+                    selected = int(input(
+                        "There are no values in history so type -1 to enter a new string instead: ").strip())
+                else:
+                    selected = int(input(
+                        "Select password from history (please select numbers only) or type -1 to enter a new string instead: ").strip())
                 if not is_valid_numbers(selected):
                     print("ERROR Invalid input! Input can only contain numbers.")
                     logger.stdin.write("ERROR " + " Invalid input! Input can only contain numbers" + "\n")

@@ -834,3 +834,46 @@ Driver program exit
 ### 2025-03-24 22:01 - [END_DRIVER] Driver program exit
 ### 2025-03-24 22:01 - [END_ENCRYPTION] Encryption program exit
 ### 2025-03-24 22:01 - [STOP_LOGGER] Logger stopped
+### 2025-03-24 22:51 - [START_LOGGER] Logger started
+### 2025-03-24 22:51 - [START_DRIVER] Driver program started
+### 2025-03-24 22:51 - [START_ENCRYPTION] Encryption program started
+### 2025-03-24 22:51 - [USER_INPUT] PASSWORD
+### 2025-03-24 22:51 - [USER_INPUT] Use a password from history
+### 2025-03-24 22:52 - [USER_INPUT] -1
+### 2025-03-24 22:52 - [USER_INPUT] Use a new password
+### 2025-03-24 22:52 - [RESULT_PASSWORD] RESULT Passkey set
+### 2025-03-24 22:52 - [USER_INPUT] ENCRYPT
+### 2025-03-24 22:52 - [USER_INPUT] Use a string from history
+### 2025-03-24 22:52 - [USER_INPUT] -1
+### 2025-03-24 22:52 - [USER_INPUT] Use a new string to encrypt
+### 2025-03-24 22:52 - [ENCRYPT_MESSAGE] HELLO
+### 2025-03-24 22:52 - [ENCRYPT_RESULT] OIWWC
+### 2025-03-24 22:52 - [USER_INPUT] DECRYPT
+### 2025-03-24 22:52 - [USER_INPUT] Use a string from history
+### 2025-03-24 22:52 - [USER_INPUT] 1
+### 2025-03-24 22:52 - [DECRYPT_MESSAGE] HELLO
+### 2025-03-24 22:52 - [DECRYPT_RESULT] AAAAA
+### 2025-03-24 22:52 - [USER_INPUT] 3
+### 2025-03-24 22:52 - [ERROR]  Invalid choice
+### 2025-03-24 22:52 - [USER_INPUT] DECRYPT
+### 2025-03-24 22:52 - [USER_INPUT] Use a string from history
+### 2025-03-24 22:52 - [USER_INPUT] 5
+### 2025-03-24 22:52 - [ERROR] Invalid input! Input can only contain numbers and must be one of the options shown above
+### 2025-03-24 22:52 - [USER_INPUT] DECRYPT
+### 2025-03-24 22:52 - [USER_INPUT] Use a string from history
+### 2025-03-24 22:52 - [USER_INPUT] 2
+### 2025-03-24 22:52 - [DECRYPT_MESSAGE] OIWWC
+### 2025-03-24 22:52 - [DECRYPT_RESULT] HELLO
+### 2025-03-24 22:52 - [USER_INPUT] HISTORY
+### 2025-03-24 22:52 - [SHOW_HISTORY] 
+### 2025-03-24 22:52 - [USER_INPUT] QUIT
+### 2025-03-24 22:52 - [END_DRIVER] Driver program exit
+### 2025-03-24 22:52 - [END_ENCRYPTION] Encryption program exit
+### 2025-03-24 22:52 - [STOP_LOGGER] Logger stopped
+### 2025-03-24 22:53 - [START_LOGGER] Logger started
+### 2025-03-24 22:53 - [START_DRIVER] Driver program started
+### 2025-03-24 22:53 - [START_ENCRYPTION] Encryption program started
+### 2025-03-24 22:53 - [USER_INPUT] DECRYPT
+### 2025-03-24 22:53 - [USER_INPUT] Use a string from history
+### 2025-03-24 22:54 - [USER_INPUT] 1
+### 2025-03-24 22:54 - [ERROR] Invalid input! Input can only contain numbers and must be one of the options shown above
