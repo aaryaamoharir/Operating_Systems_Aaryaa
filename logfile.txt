@@ -877,3 +877,129 @@ Driver program exit
 ### 2025-03-24 22:53 - [USER_INPUT] Use a string from history
 ### 2025-03-24 22:54 - [USER_INPUT] 1
 ### 2025-03-24 22:54 - [ERROR] Invalid input! Input can only contain numbers and must be one of the options shown above
+### 2025-03-24 23:06 - [START_LOGGER] Logger started
+### 2025-03-24 23:06 - [START_DRIVER] Driver program started
+### 2025-03-24 23:06 - [START_ENCRYPTION] Encryption program started
+### 2025-03-24 23:06 - [USER_INPUT] DECRYPT
+### 2025-03-24 23:07 - [START_LOGGER] Logger started
+### 2025-03-24 23:07 - [START_DRIVER] Driver program started
+### 2025-03-24 23:07 - [START_ENCRYPTION] Encryption program started
+### 2025-03-24 23:08 - [USER_INPUT] DECRYPT
+### 2025-03-24 23:08 - [DECRYPT_MESSAGE] hello
+### 2025-03-24 23:08 - [ERROR] No passkey set
+### 2025-03-24 23:08 - [USER_INPUT] ENCRYPT
+### 2025-03-24 23:08 - [USER_INPUT] Use a new string to encrypt
+### 2025-03-24 23:09 - [START_LOGGER] Logger started
+### 2025-03-24 23:09 - [START_DRIVER] Driver program started
+### 2025-03-24 23:09 - [START_ENCRYPTION] Encryption program started
+### 2025-03-24 23:09 - [USER_INPUT] ENCRYPT
+### 2025-03-24 23:09 - [USER_INPUT] Use a new string to encrypt
+### 2025-03-24 23:09 - [ENCRYPT_MESSAGE] HELLO
+### 2025-03-24 23:09 - [ERROR] No passkey set
+### 2025-03-24 23:09 - [USER_INPUT] DECRYPT
+### 2025-03-24 23:09 - [DECRYPT_MESSAGE] hi
+### 2025-03-24 23:09 - [ERROR] No passkey set
+### 2025-03-24 23:10 - [USER_INPUT] PASSWORD
+### 2025-03-24 23:10 - [USER_INPUT] Use a password from history
+### 2025-03-24 23:10 - [USER_INPUT] 1
+### 2025-03-24 23:10 - [START_LOGGER] Logger started
+### 2025-03-24 23:10 - [START_DRIVER] Driver program started
+### 2025-03-24 23:10 - [START_ENCRYPTION] Encryption program started
+### 2025-03-24 23:10 - [USER_INPUT] ENCRYPT
+### 2025-03-24 23:10 - [USER_INPUT] Use a new string to encrypt
+### 2025-03-24 23:10 - [ENCRYPT_MESSAGE] HI
+### 2025-03-24 23:10 - [ERROR] No passkey set
+### 2025-03-24 23:10 - [USER_INPUT] ENCRYPT
+### 2025-03-24 23:10 - [USER_INPUT] Use a new string to encrypt
+### 2025-03-24 23:10 - [ENCRYPT_MESSAGE] HELLO
+### 2025-03-24 23:10 - [ERROR] No passkey set
+### 2025-03-24 23:10 - [USER_INPUT] PASSWORD
+### 2025-03-24 23:11 - [USER_INPUT] Use a password from history
+### 2025-03-24 23:11 - [USER_INPUT] 2
+### 2025-03-24 23:11 - [RESULT_PASSWORD] RESULT Passkey set
+### 2025-03-24 23:11 - [USER_INPUT] PASSWORD
+### 2025-03-24 23:11 - [USER_INPUT] Use a password from history
+### 2025-03-24 23:11 - [USER_INPUT] 1
+### 2025-03-24 23:11 - [RESULT_PASSWORD] RESULT Passkey set
+### 2025-03-24 23:12 - [USER_INPUT] HISTORY
+### 2025-03-24 23:12 - [SHOW_HISTORY] 
+### 2025-03-24 23:12 - [USER_INPUT] PASSWORD
+### 2025-03-24 23:12 - [USER_INPUT] Use a password from history
+### 2025-03-24 23:12 - [USER_INPUT] 3
+### 2025-03-24 23:12 - [ERROR] Invalid input! Input can only contain numbers and must be one of the options shown above
+### 2025-03-24 23:12 - [USER_INPUT] ENCRYPT
+### 2025-03-24 23:12 - [USER_INPUT] Use a new string to encrypt
+### 2025-03-24 23:12 - [ENCRYPT_MESSAGE] HIIIII
+### 2025-03-24 23:12 - [ENCRYPT_RESULT] OQPQPQ
+### 2025-03-24 23:24 - [START_LOGGER] Logger started
+### 2025-03-24 23:24 - [START_DRIVER] Driver program started
+### 2025-03-24 23:24 - [START_ENCRYPTION] Encryption program started
+### 2025-03-24 23:24 - [USER_INPUT] PASSWORD
+### 2025-03-24 23:24 - [USER_INPUT] Use a new password
+### 2025-03-24 23:24 - [RESULT_PASSWORD] RESULT Passkey set
+### 2025-03-24 23:24 - [USER_INPUT] ENCRYPT
+### 2025-03-24 23:24 - [USER_INPUT] Use a string from history
+### 2025-03-24 23:24 - [USER_INPUT] -1
+### 2025-03-24 23:24 - [USER_INPUT] Use a new string to encrypt
+### 2025-03-24 23:24 - [ENCRYPT_MESSAGE] HELLO
+### 2025-03-24 23:24 - [ENCRYPT_RESULT] OIWWC
+### 2025-03-24 23:24 - [USER_INPUT] ENCRYPT
+### 2025-03-24 23:24 - [USER_INPUT] Use a string from history
+### 2025-03-24 23:25 - [USER_INPUT] 2
+### 2025-03-24 23:25 - [ENCRYPT_MESSAGE] OIWWC
+### 2025-03-24 23:25 - [ENCRYPT_RESULT] VMHHQ
+### 2025-03-24 23:25 - [USER_INPUT] DECRYPT
+### 2025-03-24 23:25 - [USER_INPUT] Use a string from history
+### 2025-03-24 23:25 - [USER_INPUT] 3
+### 2025-03-24 23:25 - [DECRYPT_MESSAGE] VMHHQ
+### 2025-03-24 23:25 - [DECRYPT_RESULT] OIWWC
+### 2025-03-24 23:25 - [USER_INPUT] HISTORY
+### 2025-03-24 23:25 - [SHOW_HISTORY] 
+### 2025-03-24 23:25 - [USER_INPUT] QUIT
+### 2025-03-24 23:25 - [END_DRIVER] Driver program exit
+### 2025-03-24 23:25 - [END_ENCRYPTION] Encryption program exit
+### 2025-03-24 23:25 - [STOP_LOGGER] Logger stopped
+### 2025-03-24 23:25 - [START_LOGGER] Logger started
+### 2025-03-24 23:25 - [START_DRIVER] Driver program started
+### 2025-03-24 23:25 - [START_ENCRYPTION] Encryption program started
+### 2025-03-24 23:25 - [USER_INPUT] ENCRYPT
+### 2025-03-24 23:25 - [USER_INPUT] Use a new string to encrypt
+### 2025-03-24 23:25 - [ENCRYPT_MESSAGE] HI
+### 2025-03-24 23:25 - [ERROR] No passkey set
+### 2025-03-24 23:25 - [USER_INPUT] ENCRYPT
+### 2025-03-24 23:26 - [USER_INPUT] Use a new string to encrypt
+### 2025-03-24 23:26 - [ENCRYPT_MESSAGE] HELLO
+### 2025-03-24 23:26 - [ERROR] No passkey set
+### 2025-03-24 23:26 - [USER_INPUT] PASSWORD
+### 2025-03-24 23:26 - [USER_INPUT] Use a password from history
+### 2025-03-24 23:26 - [USER_INPUT] 2
+### 2025-03-24 23:26 - [RESULT_PASSWORD] RESULT Passkey set
+### 2025-03-24 23:26 - [USER_INPUT] PASSWORD
+### 2025-03-24 23:26 - [USER_INPUT] Use a password from history
+### 2025-03-24 23:26 - [USER_INPUT] 2
+### 2025-03-24 23:26 - [RESULT_PASSWORD] RESULT Passkey set
+### 2025-03-24 23:26 - [USER_INPUT] PASSWORD
+### 2025-03-24 23:26 - [USER_INPUT] Use a new password
+### 2025-03-24 23:26 - [RESULT_PASSWORD] RESULT Passkey set
+### 2025-03-24 23:26 - [USER_INPUT] DECRYPT
+### 2025-03-24 23:26 - [USER_INPUT] Use a string from history
+### 2025-03-24 23:26 - [USER_INPUT] 1
+### 2025-03-24 23:26 - [DECRYPT_MESSAGE] HI
+### 2025-03-24 23:26 - [DECRYPT_RESULT] AA
+### 2025-03-24 23:26 - [USER_INPUT] DECRYPT
+### 2025-03-24 23:26 - [USER_INPUT] Use a string from history
+### 2025-03-24 23:26 - [USER_INPUT] 3
+### 2025-03-24 23:26 - [DECRYPT_MESSAGE] AA
+### 2025-03-24 23:26 - [DECRYPT_RESULT] TS
+### 2025-03-24 23:26 - [USER_INPUT] DECRYPT
+### 2025-03-24 23:26 - [ERROR]  Invalid choice
+### 2025-03-24 23:26 - [USER_INPUT] DECRPY
+### 2025-03-24 23:26 - [ERROR]  Invalid choice
+### 2025-03-24 23:26 - [USER_INPUT] 2
+### 2025-03-24 23:26 - [ERROR]  Invalid choice
+### 2025-03-24 23:26 - [USER_INPUT] 5
+### 2025-03-24 23:26 - [ERROR]  Invalid choice
+### 2025-03-24 23:26 - [USER_INPUT] DECRYPT
+### 2025-03-24 23:26 - [USER_INPUT] Use a string from history
+### 2025-03-24 23:26 - [USER_INPUT] 8
+### 2025-03-24 23:26 - [ERROR] Invalid input! Input can only contain numbers and must be one of the options shown above

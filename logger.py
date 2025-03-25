@@ -30,7 +30,7 @@ def main():
     # creates the file if it doesn't exist
     try:
         with open(log_file, 'x') as file:
-            file.write("# Devlog\n\nThis is a developer log.\n\n---\n")
+            file.write("# Logger\n\nThis is a log file.\n\n---\n")
     except FileExistsError:
         pass
 

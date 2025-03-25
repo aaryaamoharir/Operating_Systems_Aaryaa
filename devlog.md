@@ -90,4 +90,4 @@ constantly realizing that I forgot to account for certain edge cases or requirem
 # 2025-03-24 22:58
 I realized that if a string was to be chosen from history when history had nothing in it, it would just 
 have a invalid input error with no explanation so I added that feature! Hopefully this will be my last time submitting the
-assignment. 
+assignment. I also had a string in my devlog 

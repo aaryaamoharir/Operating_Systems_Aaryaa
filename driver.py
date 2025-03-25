@@ -169,7 +169,7 @@ def main(log_file):
                         selected_message = history[selected - 1]
                         logger.stdin.write("ENCRYPT_MESSAGE " + selected_message + "\n")
                         logger.stdin.flush()
-                        encryption.stdin.write(f"ENCRYPT {selected_message}\n" )
+                        encryption.stdin.write(f"ENCRYPT {selected_message} \n" )
                         encryption.stdin.flush()
                         encrypted_message = encryption.stdout.readline().strip()
                         if encrypted_message.startswith("ERROR"):
@@ -208,7 +208,7 @@ def main(log_file):
                 history.append(string)
                 logger.stdin.write("ENCRYPT_RESULT " + string + "\n")
                 logger.stdin.flush()
-                print("RESULT Encrypted message:" + string)
+                print("RESULT Encrypted message: " + string)
             if( choice != '1' and choice != '2' and choice != '-1'):
                 print(choice)
                 print("ERROR Invalid choice for encrypt.")
@@ -243,34 +243,34 @@ def main(log_file):
                     logger.stdin.write("ERROR " + " Invalid input! Input can only contain numbers" + "\n")
                     logger.stdin.flush()
                     continue
-            logger.stdin.write("USER_INPUT " + str(selected) + "\n")
+                logger.stdin.write("USER_INPUT " + str(selected) + "\n")
 
-            if str(selected) == '-1':
-                    choice = '1'
-            if choice == '2':
-                if (not is_valid_numbers(selected)) or (selected > len(history)):
-                    print("ERROR Invalid input! Input can only contain numbers and must be one of the options shown above")
-                    logger.stdin.write("ERROR" + " Invalid input! Input can only contain numbers and must be one of the options shown above" + "\n")
-                    logger.stdin.flush()
-                    continue
-                else:
-                    selected_message = history[selected - 1]
-                    encryption.stdin.write(f"DECRYPT {selected_message}\n" )
-                    logger.stdin.write("DECRYPT_MESSAGE " + selected_message + "\n")
-                    logger.stdin.flush()
-                    encryption.stdin.flush()
-                    decrypted_message = encryption.stdout.readline().strip()
-                    if decrypted_message.startswith("ERROR"):
-                        print(decrypted_message)
-                        logger.stdin.write(decrypted_message + "\n")
+                if str(selected) == '-1':
+                        choice = '1'
+                if choice == '2':
+                    if (not is_valid_numbers(selected)) or (selected > len(history)):
+                        print("ERROR Invalid input! Input can only contain numbers and must be one of the options shown above")
+                        logger.stdin.write("ERROR" + " Invalid input! Input can only contain numbers and must be one of the options shown above" + "\n")
                         logger.stdin.flush()
                         continue
+                    else:
+                        selected_message = history[selected - 1]
+                        encryption.stdin.write(f"DECRYPT {selected_message}\n" )
+                        logger.stdin.write("DECRYPT_MESSAGE " + selected_message + "\n")
+                        logger.stdin.flush()
+                        encryption.stdin.flush()
+                        decrypted_message = encryption.stdout.readline().strip()
+                        if decrypted_message.startswith("ERROR"):
+                            print(decrypted_message)
+                            logger.stdin.write(decrypted_message + "\n")
+                            logger.stdin.flush()
+                            continue
 
-                    string = decrypted_message.split("RESULT ", 1)[-1]
-                    logger.stdin.write("DECRYPT_RESULT " + string + "\n")
-                    logger.stdin.flush()
-                    history.append(string)
-                    print(f"RESULT Decrypted message: {decrypted_message}")
+                        string = decrypted_message.split("RESULT ", 1)[-1]
+                        logger.stdin.write("DECRYPT_RESULT " + string + "\n")
+                        logger.stdin.flush()
+                        history.append(string)
+                        print(f"RESULT Decrypted message: {string}")
 
             if choice == '1':
                 message = input("Enter string to decrypt: ").strip()
