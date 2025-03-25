@@ -86,3 +86,8 @@ I hope this doesn't take too long and after that I should be ready to submit.
 Submitting now! This project was definitely interesting and gave me a good foundation for how to use the python 
 subprocess module. However, I apologize to the ta's in advance because the code is quite messy since I was 
 constantly realizing that I forgot to account for certain edge cases or requirements. 
+
+# 2025-03-24 22:58
+I realized that if a string was to be chosen from history when history had nothing in it, it would just 
+have a invalid input error with no explanation so I added that feature! Hopefully this will be my last time submitting the
+assignment. 
