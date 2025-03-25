@@ -82,7 +82,7 @@ def main(log_file):
                 logger.stdin.write("USER_INPUT " + str(selected) + "\n")
                 if str(selected) == '-1':
                     choice = '1'
-                if str(selected) == '2':
+                if choice == '2':
                     if (not is_valid_numbers(selected)) or (selected > len(history)):
                         print( "ERROR " + " Invalid input! Input can only contain numbers and must be one of the options shown above" + "\n")
                         logger.stdin.write("ERROR" + " Invalid input! Input can only contain numbers and must be one of the options shown above" +   "\n")
@@ -118,7 +118,7 @@ def main(log_file):
                 logger.stdin.write("RESULT_PASSWORD " + encrypted_message + "\n")
                 logger.stdin.flush()
                 print("Passkey set successfully.")
-            else:
+            if (choice != '1' and choice != '2' and choice != '-1'):
                 logger.stdin.write("ERROR " + " Invalid Choice" + "\n")
                 logger.stdin.flush()
                 print("ERROR Invalid choice.")
@@ -172,6 +172,8 @@ def main(log_file):
                         string = encrypted_message.split("RESULT ", 1)[-1]
                         history.append(string)
                         print(f"RESULT Encrypted message: {string}")
+                        logger.stdin.write("ENCRYPT_RESULT " + string + "\n")
+                        logger.stdin.flush()
             if choice == '1':
                 message = input("Enter string to encrypt: ").strip().upper()
                 logger.stdin.write("USER_INPUT Use a new string to encrypt\n")
@@ -198,7 +200,7 @@ def main(log_file):
                 logger.stdin.write("ENCRYPT_RESULT " + string + "\n")
                 logger.stdin.flush()
                 print("RESULT Encrypted message:" + string)
-            if( choice != 1 and choice != 2 or choice != -1):
+            if( choice != '1' and choice != '2' and choice != '-1'):
                 print(choice)
                 print("ERROR Invalid choice for encrypt.")
                 logger.stdin.write("ERROR Invalid Choice" + "\n")
@@ -276,16 +278,18 @@ def main(log_file):
                     continue
                 string = decrypted_message.split("RESULT ", 1)[-1]
                 history.append(string)
-                logger.stdin.write("DECRYPT_RESULT" + string + "\n")
+                logger.stdin.write("DECRYPT_RESULT " + string + "\n")
                 logger.stdin.flush()
 
                 print(f"RESULT Decrypted message: {string}")
-            else:
+            if (choice != '1' and choice != '2' and choice != '-1'):
                 print("ERROR Invalid choice.")
                 logger.stdin.write("ERROR " + " Invalid choice" + "\n")
                 logger.stdin.flush()
         elif command == 'HISTORY':
             # Show history
+            logger.stdin.write("SHOW_HISTORY " + "\n")
+            logger.stdin.flush()
             print("History:")
             for item in history:
                 print(item)

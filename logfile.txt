@@ -720,3 +720,117 @@ Driver program exit
 ### 2025-03-24 17:52 - [USER_INPUT] 1
 ### 2025-03-24 17:52 - [ENCRYPT_MESSAGE] HELLO
 ### 2025-03-24 17:52 - [ERROR] Invalid Choice
+### 2025-03-24 21:45 - [START_LOGGER] Logger started
+### 2025-03-24 21:45 - [START_DRIVER] Driver program started
+### 2025-03-24 21:45 - [START_ENCRYPTION] Encryption program started
+### 2025-03-24 21:45 - [USER_INPUT] PASSWORD
+### 2025-03-24 21:45 - [USER_INPUT] Use a new password
+### 2025-03-24 21:45 - [RESULT_PASSWORD] RESULT Passkey set
+### 2025-03-24 21:45 - [USER_INPUT] ENCRYPT
+### 2025-03-24 21:45 - [USER_INPUT] Use a string from history
+### 2025-03-24 21:46 - [USER_INPUT] 1
+### 2025-03-24 21:46 - [ENCRYPT_MESSAGE] HELLO
+### 2025-03-24 21:46 - [ERROR] Invalid Choice
+### 2025-03-24 21:47 - [START_LOGGER] Logger started
+### 2025-03-24 21:47 - [START_DRIVER] Driver program started
+### 2025-03-24 21:47 - [START_ENCRYPTION] Encryption program started
+### 2025-03-24 21:47 - [USER_INPUT] PASSWORD
+### 2025-03-24 21:47 - [USER_INPUT] Use a new password
+### 2025-03-24 21:47 - [RESULT_PASSWORD] RESULT Passkey set
+### 2025-03-24 21:47 - [ERROR]  Invalid Choice
+### 2025-03-24 21:47 - [START_LOGGER] Logger started
+### 2025-03-24 21:47 - [START_DRIVER] Driver program started
+### 2025-03-24 21:47 - [START_ENCRYPTION] Encryption program started
+### 2025-03-24 21:47 - [USER_INPUT] PASSWORD
+### 2025-03-24 21:47 - [USER_INPUT] Use a new password
+### 2025-03-24 21:47 - [RESULT_PASSWORD] RESULT Passkey set
+### 2025-03-24 21:47 - [ERROR]  Invalid Choice
+### 2025-03-24 21:48 - [START_LOGGER] Logger started
+### 2025-03-24 21:48 - [START_DRIVER] Driver program started
+### 2025-03-24 21:48 - [START_ENCRYPTION] Encryption program started
+### 2025-03-24 21:48 - [USER_INPUT] PASSWORD
+### 2025-03-24 21:48 - [USER_INPUT] Use a new password
+### 2025-03-24 21:48 - [RESULT_PASSWORD] RESULT Passkey set
+### 2025-03-24 21:48 - [ERROR]  Invalid Choice
+### 2025-03-24 21:49 - [START_LOGGER] Logger started
+### 2025-03-24 21:49 - [START_DRIVER] Driver program started
+### 2025-03-24 21:49 - [START_ENCRYPTION] Encryption program started
+### 2025-03-24 21:49 - [USER_INPUT] PASSWORD
+### 2025-03-24 21:49 - [USER_INPUT] Use a new password
+### 2025-03-24 21:49 - [RESULT_PASSWORD] RESULT Passkey set
+### 2025-03-24 21:49 - [ERROR]  Invalid Choice
+### 2025-03-24 21:51 - [START_LOGGER] Logger started
+### 2025-03-24 21:51 - [START_DRIVER] Driver program started
+### 2025-03-24 21:51 - [START_ENCRYPTION] Encryption program started
+### 2025-03-24 21:51 - [USER_INPUT] PASSWORD
+### 2025-03-24 21:51 - [USER_INPUT] Use a new password
+### 2025-03-24 21:51 - [RESULT_PASSWORD] RESULT Passkey set
+### 2025-03-24 21:51 - [USER_INPUT] 1
+### 2025-03-24 21:51 - [ERROR]  Invalid choice
+### 2025-03-24 21:51 - [USER_INPUT] PASSWORD
+### 2025-03-24 21:51 - [USER_INPUT] Use a password from history
+### 2025-03-24 21:51 - [USER_INPUT] 1
+### 2025-03-24 21:51 - [USER_INPUT] PASSWORD
+### 2025-03-24 21:51 - [USER_INPUT] Use a password from history
+### 2025-03-24 21:55 - [START_LOGGER] Logger started
+### 2025-03-24 21:55 - [START_DRIVER] Driver program started
+### 2025-03-24 21:55 - [START_ENCRYPTION] Encryption program started
+### 2025-03-24 21:56 - [USER_INPUT] PASSWORD
+### 2025-03-24 21:56 - [USER_INPUT] Use a new password
+### 2025-03-24 21:56 - [RESULT_PASSWORD] RESULT Passkey set
+### 2025-03-24 21:56 - [USER_INPUT] PASSWORD
+### 2025-03-24 21:56 - [USER_INPUT] Use a password from history
+### 2025-03-24 21:56 - [USER_INPUT] 3
+### 2025-03-24 21:56 - [ERROR] Invalid input! Input can only contain numbers and must be one of the options shown above
+### 2025-03-24 21:56 - [USER_INPUT] PASSWORD
+### 2025-03-24 21:56 - [USER_INPUT] Use a password from history
+### 2025-03-24 21:56 - [USER_INPUT] 1
+### 2025-03-24 21:56 - [RESULT_PASSWORD] RESULT Passkey set
+### 2025-03-24 21:56 - [USER_INPUT] ENCRYPT
+### 2025-03-24 21:56 - [USER_INPUT] Use a string from history
+### 2025-03-24 21:56 - [USER_INPUT] 1
+### 2025-03-24 21:56 - [ENCRYPT_MESSAGE] HELLO
+### 2025-03-24 21:56 - [USER_INPUT] ENCRYPT
+### 2025-03-24 21:56 - [USER_INPUT] Use a string from history
+### 2025-03-24 21:56 - [USER_INPUT] 3
+### 2025-03-24 21:56 - [ERROR] Invalid input! Input can only contain numbers and must be one of the options shown above
+### 2025-03-24 21:56 - [USER_INPUT] ENCRYPT
+### 2025-03-24 21:56 - [USER_INPUT] Use a string from history
+### 2025-03-24 21:56 - [USER_INPUT] -1
+### 2025-03-24 21:56 - [USER_INPUT] Use a new string to encrypt
+### 2025-03-24 21:56 - [ENCRYPT_MESSAGE] AAAA
+### 2025-03-24 21:56 - [ENCRYPT_RESULT] HELL
+### 2025-03-24 21:57 - [USER_INPUT] DECRYPT
+### 2025-03-24 21:57 - [USER_INPUT] -1
+### 2025-03-24 21:57 - [DECRYPT_MESSAGE] hello
+### 2025-03-24 21:57 - [DECRYPT_RESULTAAAAA] 
+### 2025-03-24 21:57 - [USER_INPUT] DECRYPT
+### 2025-03-24 21:57 - [USER_INPUT] Use a string from history
+### 2025-03-24 21:57 - [USER_INPUT] 2
+### 2025-03-24 21:57 - [DECRYPT_MESSAGE] OIWWC
+### 2025-03-24 21:57 - [DECRYPT_RESULT] HELLO
+### 2025-03-24 21:57 - [USER_INPUT] HISTORY
+### 2025-03-24 21:57 - [SHOW_HISTORY] 
+### 2025-03-24 21:57 - [USER_INPUT] QUIT
+### 2025-03-24 21:57 - [END_DRIVER] Driver program exit
+### 2025-03-24 21:57 - [END_ENCRYPTION] Encryption program exit
+### 2025-03-24 21:57 - [STOP_LOGGER] Logger stopped
+### 2025-03-24 21:59 - [START_LOGGER] Logger started
+### 2025-03-24 21:59 - [START_DRIVER] Driver program started
+### 2025-03-24 21:59 - [START_ENCRYPTION] Encryption program started
+### 2025-03-24 21:59 - [USER_INPUT] PASSWORD
+### 2025-03-24 21:59 - [USER_INPUT] Use a new password
+### 2025-03-24 21:59 - [RESULT_PASSWORD] RESULT Passkey set
+### 2025-03-24 21:59 - [USER_INPUT] ENCRYPT
+### 2025-03-24 22:01 - [USER_INPUT] Use a new string to encrypt
+### 2025-03-24 22:01 - [ENCRYPT_MESSAGE] HELLO
+### 2025-03-24 22:01 - [ENCRYPT_RESULT] OIWWC
+### 2025-03-24 22:01 - [USER_INPUT] ENCRYPT
+### 2025-03-24 22:01 - [USER_INPUT] Use a string from history
+### 2025-03-24 22:01 - [USER_INPUT] 1
+### 2025-03-24 22:01 - [ENCRYPT_MESSAGE] HELLO
+### 2025-03-24 22:01 - [ENCRYPT_RESULT] OIWWC
+### 2025-03-24 22:01 - [USER_INPUT] QUIT
+### 2025-03-24 22:01 - [END_DRIVER] Driver program exit
+### 2025-03-24 22:01 - [END_ENCRYPTION] Encryption program exit
+### 2025-03-24 22:01 - [STOP_LOGGER] Logger stopped
