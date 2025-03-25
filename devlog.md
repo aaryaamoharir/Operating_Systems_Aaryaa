@@ -81,3 +81,8 @@ readme file which I'll work on later today. There was also a logic issue with my
 # 2025-03-24 21:53
 I'm adding finishing touches before I submit. There are some error output issues that I'm currently working on fixing. 
 I hope this doesn't take too long and after that I should be ready to submit. 
+
+# 2025-03-24 22:06
+Submitting now! This project was definitely interesting and gave me a good foundation for how to use the python 
+subprocess module. However, I apologize to the ta's in advance because the code is quite messy since I was 
+constantly realizing that I forgot to account for certain edge cases or requirements. 

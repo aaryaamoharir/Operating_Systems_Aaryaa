@@ -33,7 +33,31 @@ It needs to be run using python3
 
 # What does the output mean 
 
-It you get an error that says invalid input it could be because history holds no information and therefore, a string from history 
-cannot be chosen and it will redirect you to the main options once again. USER_INPUT in the log file includes what the user inputted, 
+These are what the actions in the logger mean.
+
+START_LOGGER – Initiates the logging mechanism.
+START_DRIVER – Starts the main driver program.
+START_ENCRYPTION – Starts the encryption process.
+
+USER_INPUT – Represents an input command from the user.
+PASSWORD – User inputs a password-related command.
+RESULT_PASSWORD – Confirms the password has been successfully set.
+
+ENCRYPT_MESSAGE – Shows the message that is being encrypted.
+ENCRYPT_RESULT – Displays the result of a encryption operation.
+DECRYPT_MESSAGE – Shows the encrypted message that is being decrypted.
+DECRYPT_RESULT – Displays the result of a decryption operation.
+
+SHOW_HISTORY – Displays the command history.
+QUIT – Terminates the session or program.
+
+END_DRIVER – Indicates that the main driver program has exited.
+END_ENCRYPTION – Signals that the encryption process has ended.
+STOP_LOGGER – Stops the logging mechanism.
+ERROR - An error occured 
 
 # Error handling
+
+If there is an error in the program (such as incorrect input or if the encryption process suddenly dies), 
+it will be outputted to the console and to the log. However, the program will continue to run, the user will 
+just be redirected to the main input screen if they enter an invalid choice. 
